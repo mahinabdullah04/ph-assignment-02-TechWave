@@ -47,7 +47,7 @@
         <!-- Navbar btn -->
         <div>
           <button
-            class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white rounded-full px-4 py-1 font-medium"
+            class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white rounded-full py-3 px-5 font-medium"
           >
             Subscribe <i class="fa-solid fa-arrow-right"></i>
           </button>
@@ -55,28 +55,38 @@
       </div>
     </nav>
     <!-- Banner -->
-    <div
-      class="bg-[url(assets/hero-bg.png)] bg-contain bg-center flex flex-col justify-center items-center relative"
+    <section
+      class="banner-parent bg-[url('assets/hero-bg.png')] bg-center bg-cover h-[760px] flex justify-center items-center"
     >
-      <!-- Banner Logo -->
-      <div class="w-full max-w- items-center flex justify-center">
-        <img src="assets/hero-circle.png" alt="" />
+      <div class="banner-container text-center">
+        <div class="banner-logo mb-10 relative inline-block">
+          <img src="assets/hero-circle.png" alt="" />
+          <img
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            src="assets/microphone.png"
+            alt=""
+          />
+        </div>
+        <div class="banner-heading">
+          <h1 class="text-white text-6xl font-extrabold mb-12">TechWave</h1>
+        </div>
+        <div class="banner-btns text-white">
+          <button
+            class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white rounded-full py-3 px-5 font-medium"
+          >
+            <i class="fa-brands fa-spotify"></i> Listen on Spotify
+          </button>
+          <button
+            class="border border-[#00FF88] text-[#00FF88] rounded-full py-3 px-5"
+          >
+            <i class="fa-solid fa-envelope"></i> Subscribe
+          </button>
+        </div>
       </div>
-      <!-- Banner Content -->
-      <div>
-        <!-- Banner Heading -->
-        <h1 class="text-white">TechWave</h1>
-        <p class="text-white">
-          Your daily dose of tech insights, productivity hacks, and personal
-          growth
-        </p>
-        <button>Listen On Spotify</button>
-        <button>Subscribe</button>
-      </div>
-    </div>
+    </section>
     <!-- About Section -->
 
-    <section class="bg-[#1A0B2E]">
+    <section class="bg-[#1A0B2E] pt-12">
       <div
         class="max-w-[1200px] flex flex-col justify-center items-center text-center mx-auto"
       >
