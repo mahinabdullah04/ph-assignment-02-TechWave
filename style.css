@@ -20,13 +20,17 @@
 }
 .info-grid {
   margin: 0 auto;
+  padding: 0 1rem;
   display: grid;
   grid-template-areas:
-    "audio mobile mobile"
-    "audio global global"
-    "interview interview resource";
-  gap: 30px;
+    "audio"
+    "mobile"
+    "global"
+    "interview"
+    "resource";
+  gap: 20px;
 }
+
 .info-grid p {
   color: rgba(255, 255, 255, 0.616);
 }
@@ -34,4 +38,15 @@
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  .info-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "audio mobile mobile"
+      "audio global global"
+      "interview interview resource";
+    gap: 30px;
+  }
 }
