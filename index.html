@@ -198,7 +198,7 @@
 
     <!-- Featured Episodes -->
     <section
-      class="bg-[#1A0B2E] flex flex-col lg:flex-row justify-center items-center pb-28"
+      class="bg-[#1A0B2E] flex flex-col lg:flex-row justify-center items-center pb-16 lg:pb-28"
     >
       <div class="featured-episodes mx-5 pt-10 lg:pt-24 max-w-[1200px]">
         <!-- Header -->
@@ -338,15 +338,19 @@
         </div>
         <!-- Host card -->
         <div
-          class="host-card-container bg-[#250D44] rounded-4xl p-10 flex gap-6"
+          class="host-card-container bg-[#250D44] rounded-43xl flex flex-col w-full lg:flex-row gap-6 p-10 items-center"
         >
           <div class="card-img">
             <img width="200px" src="assets/host.png" alt="" />
           </div>
-          <div class="card-content w-4xl">
+          <div class="card-content w-full lg:w-4xl">
             <div class="card-text">
-              <h2 class="text-white text-3xl font-bold mb-4">John Doe</h2>
-              <p class="text-gray-400">
+              <h2
+                class="text-white text-3xl font-bold mb-4 text-center lg:text-left"
+              >
+                John Doe
+              </h2>
+              <p class="text-gray-400 text-center lg:text-left">
                 Tech entrepreneur, productivity expert, and lifelong learner.
                 John has been in the tech industry for over 10 years, working
                 with startups and Fortune 500 companies. Through TechWave, John
@@ -354,7 +358,9 @@
                 anyone looking to grow in tech.
               </p>
             </div>
-            <div class="socials mt-4 flex gap-2">
+            <div
+              class="socials mt-4 flex gap-2 justify-center lg:justify-normal"
+            >
               <div class="border border-gray-400 rounded-full w-10 p-3">
                 <img src="assets/x.png" alt="" />
               </div>
