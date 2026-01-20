@@ -345,7 +345,7 @@
         </div>
         <!-- Host card -->
         <div
-          class="host-card-container bg-[#250D44] rounded-43xl flex flex-col w-full lg:flex-row gap-6 p-10 items-center"
+          class="host-card-container bg-[#250D44] rounded-4xl flex flex-col w-full lg:flex-row gap-6 p-10 items-center"
         >
           <div class="card-img">
             <img width="200px" src="assets/host.png" alt="" />
@@ -390,40 +390,42 @@
     <footer
       class="bg-[url('assets/footer-bg.png')] bg-cover bg-center flex justify-center items-center"
     >
-      <div class="footer-container lg:h-[412px] p-32">
+      <div class="footer-container py-12 px-6 lg:h-[412px] lg:p-32">
         <div class="footer-content text-center max-w-[1360px]">
-          <h1 class="text-white font-bold text-7xl mb-8">
+          <h1 class="text-white font-bold text-5xl lg:text-7xl mb-8">
             <span>Tech</span
             ><span
               class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
               >Wave</span
             >
           </h1>
-          <div class="footer-socials-container flex gap-10">
-            <div class="social flex gap-2">
+          <div
+            class="footer-socials-container flex flex-col lg:flex-row gap-6 lg:gap-10 lg:justify-center"
+          >
+            <div class="social flex gap-2 justify-center lg:justify-start">
               <div class="icon"><img src="assets/spotify.png" alt="" /></div>
               <div class="text-gray-400">Spotify</div>
             </div>
-            <div class="social flex gap-2">
+            <div class="social flex gap-2 justify-center lg:justify-start">
               <div class="icon">
                 <img src="assets/apple-podcast.png" alt="" />
               </div>
               <div class="text-gray-400">Apple Podcasts</div>
             </div>
-            <div class="social flex gap-2">
+            <div class="social flex gap-2 justify-center lg:justify-start">
               <div class="icon">
                 <img src="assets/youtube-podcast.png" alt="" />
               </div>
               <div class="text-gray-400">Youtube</div>
             </div>
-            <div class="social flex gap-2">
+            <div class="social flex gap-2 justify-center lg:justify-start">
               <div class="icon"><img src="assets/twitter.png" alt="" /></div>
               <div class="text-gray-400">Twitter</div>
             </div>
           </div>
         </div>
 
-        <div class="rights text-gray-400 mt-8 text-center">
+        <div class="rights text-gray-400 mt-8 text-center text-sm lg:text-base">
           © 2026 TechWave Podcast. All rights reserved.
         </div>
       </div>
