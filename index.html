@@ -24,11 +24,11 @@
     <!-- Navbar -->
     <nav class="bg-[#1A0B2E]">
       <div
-        class="max-w-[1440px] mx-auto flex justify-between items-center content-center pt-7 pb-7 px-48"
+        class="max-w-[1440px] mx-auto flex justify-between items-center pt-7 pb-7 px-6 lg:px-48"
       >
         <!-- Navbar Logo -->
         <div>
-          <h2 class="text-4xl font-bold text">
+          <h2 class="text-3xl lg:text-4xl font-bold text">
             <span class="text-white">Tech</span
             ><span
               class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
@@ -37,19 +37,26 @@
           </h2>
         </div>
 
-        <!-- Nav links -->
-        <div>
-          <a class="pr-8 text-white" href="">About</a>
-          <a class="pr-8 text-white" href="">Episodes</a>
-          <a class="text-white" href="">Host</a>
+        <!-- Nav links - Hidden on mobile -->
+        <div class="hidden lg:flex gap-8">
+          <a class="text-white hover:text-gray-300" href="">About</a>
+          <a class="text-white hover:text-gray-300" href="">Episodes</a>
+          <a class="text-white hover:text-gray-300" href="">Host</a>
         </div>
 
-        <!-- Navbar btn -->
-        <div>
+        <!-- Navbar btn - Hidden on mobile -->
+        <div class="hidden lg:block">
           <button
             class="bg-gradient-to-tr from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white rounded-full py-3 px-5 font-medium"
           >
             Subscribe <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Hamburger Menu - Visible on mobile -->
+        <div class="lg:hidden">
+          <button class="text-white">
+            <i class="fa-solid fa-bars text-2xl"></i>
           </button>
         </div>
       </div>
